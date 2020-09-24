@@ -53,23 +53,23 @@ function setup(){
     
 /*   ========================Firebase stuff Begins Here========================================*/
 
-    // Firebase configuration here
-    var firebaseConfig = {
-   apiKey: "AIzaSyBMdyADowFNLi-mVDm91NYnBKSem_peveg",
-    authDomain: "ambience-database.firebaseapp.com",
-    databaseURL: "https://ambience-database.firebaseio.com",
-    projectId: "ambience-database",
-    storageBucket: "ambience-database.appspot.com",
-    messagingSenderId: "953268091712",
-    appId: "1:953268091712:web:806a6e5cf4181b5159d8a5"
-  };
-        //Initialising Firebase here
-  firebase.initializeApp(firebaseConfig);
-//    Console Logging firebase
-  console.log(firebase);
-//  Initialising the firebase database
- database = firebase.database();
- //Firebase stuff Ends Here   
+//     // Firebase configuration here
+//     var firebaseConfig = {
+//    apiKey: "AIzaSyBMdyADowFNLi-mVDm91NYnBKSem_peveg",
+//     authDomain: "ambience-database.firebaseapp.com",
+//     databaseURL: "https://ambience-database.firebaseio.com",
+//     projectId: "ambience-database",
+//     storageBucket: "ambience-database.appspot.com",
+//     messagingSenderId: "953268091712",
+//     appId: "1:953268091712:web:806a6e5cf4181b5159d8a5"
+//   };
+//         //Initialising Firebase here
+//   firebase.initializeApp(firebaseConfig);
+// //    Console Logging firebase
+//   console.log(firebase);
+// //  Initialising the firebase database
+//  database = firebase.database();
+//  //Firebase stuff Ends Here   
     
     /*  ===========================Firebase stuff Ends Here=======================================   */
 
