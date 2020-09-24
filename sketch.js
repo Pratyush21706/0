@@ -54,21 +54,21 @@ function setup(){
 /*   ========================Firebase stuff Begins Here========================================*/
 
 //     // Firebase configuration here
-//     var firebaseConfig = {
-//    apiKey: "AIzaSyBMdyADowFNLi-mVDm91NYnBKSem_peveg",
-//     authDomain: "ambience-database.firebaseapp.com",
-//     databaseURL: "https://ambience-database.firebaseio.com",
-//     projectId: "ambience-database",
-//     storageBucket: "ambience-database.appspot.com",
-//     messagingSenderId: "953268091712",
-//     appId: "1:953268091712:web:806a6e5cf4181b5159d8a5"
-//   };
-//         //Initialising Firebase here
-//   firebase.initializeApp(firebaseConfig);
-// //    Console Logging firebase
-//   console.log(firebase);
-// //  Initialising the firebase database
-//  database = firebase.database();
+    var firebaseConfig = {
+   apiKey: "AIzaSyBMdyADowFNLi-mVDm91NYnBKSem_peveg",
+    authDomain: "ambience-database.firebaseapp.com",
+    databaseURL: "https://ambience-database.firebaseio.com",
+    projectId: "ambience-database",
+    storageBucket: "ambience-database.appspot.com",
+    messagingSenderId: "953268091712",
+    appId: "1:953268091712:web:806a6e5cf4181b5159d8a5"
+  };
+        //Initialising Firebase here
+  firebase.initializeApp(firebaseConfig);
+//    Console Logging firebase
+  console.log(firebase);
+//  Initialising the firebase database
+ database = firebase.database();
 //  //Firebase stuff Ends Here   
     
     /*  ===========================Firebase stuff Ends Here=======================================   */
@@ -92,7 +92,7 @@ nextButton = createButton(`→`)
             input1.style(`border-bottom-style`,`groove`)
              input1.style(`border-right-style`,`hidden`)
               input1.style(`border-left-style`,`hidden`)
-               input1.style(`padding-right`,`40px`)
+               input1.style(`padding-right`,`30px`)
                 input1.style(`outline`,`0px`)
                  input1.style(`color`,`white`)
                   input2 = createInput(``,`password`)
@@ -103,7 +103,7 @@ nextButton = createButton(`→`)
                        input2.style(`border-bottom-style`,`groove`)
                         input2.style(`border-right-style`,`hidden`)
                          input2.style(`border-left-style`,`hidden`)
-                           input2.style(`padding-right`,`40px`)
+                           input2.style(`padding-right`,`30px`)
                              input2.style(`outline`,`0px`)
                                input2.style(`color`,`white`)
                                 input3 = createInput(``)
@@ -114,7 +114,7 @@ nextButton = createButton(`→`)
                                       input3.style(`border-bottom-style`,`groove`)
                                         input3.style(`border-right-style`,`hidden`)
                                          input3.style(`border-left-style`,`hidden`)
-                                          input3.style(`padding-right`,`40px`)
+                                          input3.style(`padding-right`,`30px`)
                                            input3.style(`outline`,`0px`)
                                               input3.style(`color`,`white`)     
                                                 input4 = createInput(``)
@@ -125,7 +125,7 @@ nextButton = createButton(`→`)
                                                         input4.style(`border-bottom-style`,`groove`)
                                                          input4.style(`border-right-style`,`hidden`)
                                                            input4.style(`border-left-style`,`hidden`)
-                                                             input4.style(`padding-right`,`40px`)
+                                                             input4.style(`padding-right`,`30px`)
                                                                input4.style(`outline`,`0px`)
                                                                  input4.style(`color`,`white`)  
                                                                   input5 = createInput(``,`number`)
@@ -136,7 +136,7 @@ nextButton = createButton(`→`)
                                                                          input5.style(`border-bottom-style`,`groove`)
                                                                             input5.style(`border-right-style`,`hidden`)
                                                                              input5.style(`border-left-style`,`hidden`)
-                                                                              input5.style(`padding-right`,`40px`)
+                                                                              input5.style(`padding-right`,`30px`)
                                                                                input5.style(`outline`,`0px`)
                                                                                 input5.style(`color`,`white`)
                                                                                   input6 = createInput(``,`password`)
@@ -147,7 +147,7 @@ nextButton = createButton(`→`)
                                                                                                 input6.style(`border-bottom-style`,`groove`)
                                                                                                  input6.style(`border-right-style`,`hidden`)
                                                                                                    input6.style(`border-left-style`,`hidden`)
-                                                                                                     input6.style(`padding-right`,`40px`)
+                                                                                                     input6.style(`padding-right`,`30px`)
                                                                                                        input6.style(`outline`,`0px`)
                                                                                                         input6.style(`color`,`white`)
                                                                                                           input7 = createInput(``,`password`)
@@ -158,7 +158,7 @@ nextButton = createButton(`→`)
                                                                                                                           input7.style(`border-bottom-style`,`groove`)
                                                                                                                             input7.style(`border-right-style`,`hidden`)
                                                                                                                              input7.style(`border-left-style`,`hidden`)
-                                                                                                                               input7.style(`padding-right`,`40px`)
+                                                                                                                               input7.style(`padding-right`,`30px`)
                                                                                                                                  input7.style(`outline`,`0px`)
                                                                                                                                   input7.style(`color`,`white`)
                                                                                                                                      registerButton = createButton(`Log In`)
