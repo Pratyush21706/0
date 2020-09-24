@@ -8,12 +8,12 @@ canvas {
       #author{
                             font-family: sans-serif;
               font-size: 20px;
-              margin-left: 290px
+              margin-left: 240px
           }
           .quote{
               font-family: sans-serif;
 /*              margin-top:;*/
-font-size: 25px;
+font-size: 20px;
     margin-left: 20px;
                              margin-top:-32px;
 
@@ -23,7 +23,7 @@ font-size: 25px;
                              font-family: sans-serif;
 
 /*              margin-top:;*/
-font-size: 25px;
+font-size: 20px;
                              margin-top:-12px;
 
     margin-left: 50px;
