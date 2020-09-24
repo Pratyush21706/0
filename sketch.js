@@ -5,7 +5,7 @@
 //So without wasting much of your time let's begin
 
 //setting up the localstorage (the most important part of this project) so that the users can log in or log out
-localStorage.speed=1;
+localStorage.speed;
 
 //Declaring the two user credential variables
 var uN,Up;
@@ -53,7 +53,7 @@ function setup(){
     
 /*   ========================Firebase stuff Begins Here========================================*/
 
-//     // Firebase configuration here
+    // Firebase configuration here
     var firebaseConfig = {
    apiKey: "AIzaSyBMdyADowFNLi-mVDm91NYnBKSem_peveg",
     authDomain: "ambience-database.firebaseapp.com",
@@ -69,7 +69,7 @@ function setup(){
   console.log(firebase);
 //  Initialising the firebase database
  database = firebase.database();
-//  //Firebase stuff Ends Here   
+ //Firebase stuff Ends Here   
     
     /*  ===========================Firebase stuff Ends Here=======================================   */
 
@@ -89,12 +89,12 @@ nextButton = createButton(`→`)
          input1.style(`background`,`transparent`)
           input1.style(`font-size`,`25px`)
            input1.style(`border-top-style`,`hidden`)
-            input1.style(`border-bottom-style`,`groove`)
+                     input1.style(`color`,`white`)
+            input1.style(`border-bottom-style`,`1px solid black`)
              input1.style(`border-right-style`,`hidden`)
               input1.style(`border-left-style`,`hidden`)
-               input1.style(`padding-right`,`24px`)
+               input1.style(`width`,`85%`)
                 input1.style(`outline`,`0px`)
-                 input1.style(`color`,`white`)
                   input2 = createInput(``,`password`)
                    input2.position(width/4,-555);
                     input2.style(`font-size`,`25px`)
@@ -103,7 +103,7 @@ nextButton = createButton(`→`)
                        input2.style(`border-bottom-style`,`groove`)
                         input2.style(`border-right-style`,`hidden`)
                          input2.style(`border-left-style`,`hidden`)
-                           input2.style(`padding-right`,`24px`)
+                                    input2.style(`width`,`85%`)
                              input2.style(`outline`,`0px`)
                                input2.style(`color`,`white`)
                                 input3 = createInput(``)
@@ -114,7 +114,8 @@ nextButton = createButton(`→`)
                                       input3.style(`border-bottom-style`,`groove`)
                                         input3.style(`border-right-style`,`hidden`)
                                          input3.style(`border-left-style`,`hidden`)
-                                          input3.style(`padding-right`,`24px`)
+//                                          input3.style(`padding-right`,`40px`)
+                                        input3.style(`width`,`85%`)
                                            input3.style(`outline`,`0px`)
                                               input3.style(`color`,`white`)     
                                                 input4 = createInput(``)
@@ -125,7 +126,7 @@ nextButton = createButton(`→`)
                                                         input4.style(`border-bottom-style`,`groove`)
                                                          input4.style(`border-right-style`,`hidden`)
                                                            input4.style(`border-left-style`,`hidden`)
-                                                             input4.style(`padding-right`,`24px`)
+                                                                                                input4.style(`width`,`85%`)
                                                                input4.style(`outline`,`0px`)
                                                                  input4.style(`color`,`white`)  
                                                                   input5 = createInput(``,`number`)
@@ -135,9 +136,9 @@ nextButton = createButton(`→`)
                                                                        input5.style(`border-top-style`,`hidden`)
                                                                          input5.style(`border-bottom-style`,`groove`)
                                                                             input5.style(`border-right-style`,`hidden`)
-                                                                             input5.style(`border-left-style`,`hidden`)
-                                                                              input5.style(`padding-right`,`24px`)
-                                                                               input5.style(`outline`,`0px`)
+                                                                             input5.style(`border-left-style`,`hidden`)             
+                                                                           input5.style(`width`,`85%`)
+                                                                             input5.style(`outline`,`0px`)
                                                                                 input5.style(`color`,`white`)
                                                                                   input6 = createInput(``,`password`)
                                                                                      input6.position(width/4,-555);
@@ -147,7 +148,7 @@ nextButton = createButton(`→`)
                                                                                                 input6.style(`border-bottom-style`,`groove`)
                                                                                                  input6.style(`border-right-style`,`hidden`)
                                                                                                    input6.style(`border-left-style`,`hidden`)
-                                                                                                     input6.style(`padding-right`,`24px`)
+                                                                                                                                        input6.style(`width`,`85%`)
                                                                                                        input6.style(`outline`,`0px`)
                                                                                                         input6.style(`color`,`white`)
                                                                                                           input7 = createInput(``,`password`)
@@ -158,7 +159,7 @@ nextButton = createButton(`→`)
                                                                                                                           input7.style(`border-bottom-style`,`groove`)
                                                                                                                             input7.style(`border-right-style`,`hidden`)
                                                                                                                              input7.style(`border-left-style`,`hidden`)
-                                                                                                                               input7.style(`padding-right`,`24px`)
+                                                                                                                                                                 input7.style(`width`,`85%`)
                                                                                                                                  input7.style(`outline`,`0px`)
                                                                                                                                   input7.style(`color`,`white`)
                                                                                                                                      registerButton = createButton(`Log In`)
@@ -168,8 +169,9 @@ nextButton = createButton(`→`)
                                                                                                                                                registerButton.style(`font-size`,`35px`)
                                                                                                                                                   registerButton.style(`border`,`0px`)
                                                                                                                                                      registerButton.style(`color`,`white`)
-                                                                                                                                                       registerButton.style(`padding-left`,`100px`)
-                                                                                                                                                         registerButton.style(`padding-right`,`100px`)
+//                                                                                                                                                       registerButton.style(`padding-left`,`100px`)
+                                                                                                                                                                     registerButton.style(`width`,`75%`)
+//                                                                                                                                                         registerButton.style(`padding-right`,`100px`)
                                                                                                                                                             registerButton.style(`padding-top`,`5px`)
                                                                                                                                                                registerButton.style(`padding-bottom`,`5px`)
                                                                                                                                                                    registerButton.style(`border-radius`,`6px`)
@@ -347,7 +349,22 @@ sum.style(`outline`,`0px`)
         a2.style(`outline`,`0px`);
 
                a2.mousePressed(back_1)
+    
+    logout = createButton(``)
+     logout.style(`background`,`url("logout.png")`);
+    logout.style(`background-size`,`100%`)
+logout.style(`border`,`10000px`)
+ logout.style(`padding`,`14px`)
+                logout.style(`outline`,`0px`)
+    logout.position(width/1.2,-555)
+    logout.mousePressed(logg)
 
+}
+
+logg = function(){
+    localStorage.speed = 1;
+    a = 2;
+    c = 1;
 }
 back_1 = function(){
     a = 2;
@@ -435,7 +452,7 @@ c = 2;
 ref.on("value", gotData, errData);
 }
 function update(){
-    if(uN==input1.value()){
+    if(uN != input1.value()){
         console.log("success")
     }
      if(uP==input2.value()){
@@ -496,9 +513,6 @@ function draw(){
 //        alert('please rotate your phone')
 //    }
     drawSprites();
-//     fill("black")
-//     textSize(40)
-//     text("W: "+window.innerWidth+"  H: "+window.innerHeight,20,60);
     if(localStorage.water==null){
         localStorage.water = 0;
     }
@@ -527,9 +541,15 @@ function draw(){
 //        better = quotes.body;
 //        console.log(better)
 //    }
- if(localStorage.speed==1){
+ if(localStorage.speed==1||localStorage.speed == null){
+     resizeCanvas(window.innerWidth,window.innerHeight)
+     
+     background("white")
+               sum.position(2,-5555)
+     start.position(width/1.9,-555);
+      end.position(width/1.9,-555);
+            logout.position(width/1.2,-555)
      if(a===1){
-         
     fill("black")
           image(smile,width/11,height/8,width/1.1,height/3)
     textSize(60)
@@ -610,7 +630,10 @@ newUser.position(width/3,height/1.2)
      }
      if(a===3){
                   background("#313131")
-
+// sum.position(2,-5555)
+//     start.position(width/1.9,-555);
+//      end.position(width/1.9,-555);
+//            logout.position(width/1.2,-555)
          input1.position(2,-5555);
                   input2.position(2,-5555);
 newUser.position(width/3,-555)  
@@ -687,6 +710,7 @@ Reports.position(width/1.91,height/1.4)
     start.position(width/1.9,height/1.384);
     end.position(width/1.9,height/1.384);
                                         sum.position(width/25,height/2.51)
+            logout.position(width/1.2,20)
 
             background(dark)
              fill("white")
@@ -773,6 +797,10 @@ see.position(200,-5555)
     }
 //console.log(localStorage.login)
         if(localStorage.speed==35){
+             sum.position(2,-5555)
+     start.position(width/1.9,-555);
+      end.position(width/1.9,-555);
+            logout.position(width/1.2,-555)
          resizeCanvas(window.innerWidth,window.innerHeight)
 Health.position(15,-555)
 Goals.position(width/1.95,-555)
